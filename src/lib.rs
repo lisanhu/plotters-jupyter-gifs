@@ -14,7 +14,10 @@ pub const GREEN: Color = Color(0, 255, 0, 255);
 pub const BLUE: Color = Color(0, 0, 255, 255);
 #[allow(dead_code)]
 pub const CYAN: Color = Color(0, 255, 255, 255);
-// const BLACK: Color = Color(0, 0, 0, 255);
+#[allow(dead_code)]
+pub const BLACK: Color = Color(0, 0, 0, 255);
+#[allow(dead_code)]
+pub const WHITE: Color = Color(255, 255, 255, 255);
 
 pub fn to_plotters_rgba(color: Color) -> plotters::style::RGBAColor {
     plotters::style::RGBAColor(color.0, color.1, color.2, color.3 as f64 / 255f64)
